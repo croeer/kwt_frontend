@@ -26,7 +26,7 @@ export default {
     axios({ method: "GET",
             url: "https://api.myjson.com/bins/busmh",
             }).then(result => {
-        this.weightDic = result.data;
+        this.weightDic = result.data.kittens;
         
         this.data = [];
         for (var k in this.weightDic) {
